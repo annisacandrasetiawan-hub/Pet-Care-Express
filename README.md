@@ -6,3 +6,4 @@ layanan perawatan dan penitipan hewan peliharaan berbasis web. Pilih paket, hitu
 4. Jovito Kurt  Orlando Sebagai SE (1710625012)
 5. Azka Aimèe Namiah  1710625068 Sebagai CEO
 6. Ibrahim Abdurrohman 1710625072 Sebagai PM
+link https://annisacandrasetiawan-hub.github.io/Pet-Care-Express/
