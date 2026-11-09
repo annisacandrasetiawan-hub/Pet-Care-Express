@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caring Pet - Layanan Perawatan & Penitipan Hewan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Bagian 1: Header (Role: CEO) -->
+  <header id="header-section" data-role="CEO">
+    <div class="logo">
+      <h2>🐾Pet Care Express</h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#hero-section">Beranda</a></li>
+        <li><a href="#catalog-section">Katalog</a></li>
+        <li><a href="#calc-section">Kalkulator</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Bagian 2: Hero (Role: PM) -->
+  <section id="hero-section" data-role="PM">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>Kasih Sayang & Perawatan Terbaik untuk Anabul Anda</h1>
+        <p>Layanan perawatan (grooming) dan penitipan hewan peliharaan berbasis web terpercaya. Aman, bersih, dan penuh kasih sayang!</p>
+        
+        <div class="benefits">
+          <div class="benefit-item">✨ Fasilitas Ruang Ber-AC & Higienis</div>
+          <div class="benefit-item">👨‍⚕️ Tenaga Profesional & Berpengalaman</div>
+          <div class="benefit-item">📷 Laporan & Foto Harian Berkala</div>
+        </div>
+
+        <a href="#calc-section" class="btn-cta">Pesan Sekarang</a>
+      </div>
+      
+      <!-- Gambar Kucing & Anjing Lucu dan Imut -->
+      <div class="hero-image-box">
+        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=500&auto=format&fit=crop&q=80" alt="Kucing Lucu" class="cute-pet-img">
+        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=500&auto=format&fit=crop&q=80" alt="Anjing Imut" class="cute-pet-img floating-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian 3: Katalog Layanan (Role: PM) -->
+  <section id="catalog-section" data-role="PM">
+    <h2>Katalog Paket Layanan</h2>
+    <p class="section-desc">Gunakan kode promo <strong>CARINGPET</strong> untuk mendapatkan diskon potongan harga 10%!</p>
+    
+    <div class="catalog-grid">
+      <!-- Paket 1 -->
+      <div class="card">
+        <div class="card-img-container">
+          <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=400&auto=format&fit=crop&q=80" alt="Grooming Hewan">
+        </div>
+        <h3>Paket Mandi Bersih</h3>
+        <p class="price">Rp 50.000 <span>/ hewan</span></p>
+        <p class="desc">Mandi shampo khusus, pembersihan telinga, pemotongan kuku, dan pengeringan halus.</p>
+        <ul class="card-features">
+          <li>✔ Shampo Anti Kutu & Jamur</li>
+          <li>✔ Pembersihan Telinga Higienis</li>
+          <li>✔ Potong Kuku Rapi</li>
+        </ul>
+        <span class="promo-info">Promo: CARINGPET</span>
+      </div>
+
+      <!-- Paket 2 -->
+      <div class="card recommended">
+        <span class="badge">Terpopuler</span>
+        <div class="card-img-container">
+          <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?w=400&auto=format&fit=crop&q=80" alt="Perawatan Lengkap">
+        </div>
+        <h3>Paket Perawatan Lengkap</h3>
+        <p class="price">Rp 100.000 <span>/ hewan</span></p>
+        <p class="desc">Termasuk Mandi Bersih + perawatan bulu anti-kutu/jamur, spa aromaterapi, dan parfum hewan.</p>
+        <ul class="card-features">
+          <li>✔ Semua Fasilitas Mandi Bersih</li>
+          <li>✔ Spa Aromaterapi Relaksasi</li>
+          <li>✔ Vitamin & Parfum Eksklusif</li>
+        </ul>
+        <span class="promo-info">Promo: CARINGPET</span>
+      </div>
+
+      <!-- Paket 3 -->
+      <div class="card">
+        <div class="card-img-container">
+          <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?w=400&auto=format&fit=crop&q=80" alt="Penginapan Hewan">
+        </div>
+        <h3>Paket Penginapan Harian</h3>
+        <p class="price">Rp 80.000 <span>/ hari</span></p>
+        <p class="desc">Kandang privat nyaman ber-AC, makan 3x sehari, waktu bermain (playtime), dan laporan foto harian.</p>
+        <ul class="card-features">
+          <li>✔ Kandang Privat Ber-AC</li>
+          <li>✔ Makan Sehat 3x Sehari</li>
+          <li>✔ Laporan Foto & Video Harian</li>
+        </ul>
+        <span class="promo-info">Promo: CARINGPET</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian 4: Kalkulator Simulasi Biaya (Role: SE) -->
+  <section id="calc-section" data-role="SE">
+    <h2>Kalkulator Simulasi Harga</h2>
+    <div class="calc-box">
+      <form id="calc-form">
+        <div class="form-group">
+          <label for="package">Pilih Paket Layanan:</label>
+          <select id="package" required>
+            <option value="50000">Paket Mandi Bersih - Rp 50.000</option>
+            <option value="100000">Paket Perawatan Lengkap - Rp 100.000</option>
+            <option value="80000">Paket Penginapan Harian Hewan - Rp 80.000</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="quantity">Jumlah Hari / Jumlah Hewan:</label>
+          <input type="number" id="quantity" min="1" value="1" required>
+        </div>
+
+        <div class="form-group">
+          <label for="promo">Kode Promo (Opsional):</label>
+          <input type="text" id="promo" placeholder="Masukkan kode promo">
+        </div>
+
+        <button type="button" id="btn-calculate">Hitung Estimasi Biaya</button>
+      </form>
+
+      <div id="result-box" class="result-box hidden">
+        <h3>Rincian Pembayaran</h3>
+        <p>Harga Awal: <span id="res-subtotal">Rp 0</span></p>
+        <p>Potongan Diskon: <span id="res-discount">Rp 0</span></p>
+        <hr>
+        <h4>Total Bayar Akhir: <span id="res-total">Rp 0</span></h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian 5: Footer (Role: CEO) -->
+  <footer id="footer-section" data-role="CEO">
+    <p>&copy; 2026 Caring Pet - Kelompok 5 Kelas WebDev D</p>
+    <p>Dikembangkan oleh Tim Kelompok 5 (CEO, PM, UI/UX, SE)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
