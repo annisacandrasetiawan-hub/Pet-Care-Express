@@ -1,0 +1,419 @@
+/* Styling Umum & Kursor Tapak Kucing (Paw Cursor) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 24 24'%3E%3Ctext y='20' font-size='20'%3E🐾%3C/text%3E%3C/svg%3E"), auto;
+}
+
+body {
+  background-color: #f7fafc;
+  color: #2d3748;
+  line-height: 1.6;
+}
+
+/* Header Section */
+#header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem 5%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#header-section .logo h2 {
+  color: #319795;
+}
+
+#header-section nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+#header-section nav a {
+  text-decoration: none;
+  color: #4a5568;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+#header-section nav a:hover {
+  color: #319795;
+}
+
+/* Hero Section dengan Gambar Hewan Imut */
+#hero-section {
+  background: linear-gradient(135deg, #e6fffa 0%, #b2f5ea 100%);
+  padding: 4rem 5%;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.hero-content h1 {
+  font-size: 2.2rem;
+  color: #234e52;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  color: #2c7a7b;
+  margin-bottom: 1.5rem;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.benefit-item {
+  background: #ffffff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  display: inline-block;
+  width: fit-content;
+}
+
+.btn-cta {
+  display: inline-block;
+  background-color: #319795;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-cta:hover {
+  background-color: #2c7a7b;
+  transform: translateY(-2px);
+}
+
+/* Kotak Gambar Hewan di Hero */
+.hero-image-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  min-width: 280px;
+  position: relative;
+}
+
+.cute-pet-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.cute-pet-img:hover {
+  transform: scale(1.05);
+}
+
+.floating-img {
+  margin-top: 4rem;
+}
+
+/* Catalog Section */
+#catalog-section {
+  padding: 4rem 5%;
+  text-align: center;
+}
+
+#catalog-section h2 {
+  font-size: 2rem;
+  color: #2d3748;
+}
+
+.section-desc {
+  margin-bottom: 2.5rem;
+  color: #718096;
+}
+
+.catalog-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 310px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.card.recommended {
+  border: 2px solid #319795;
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #319795;
+  color: white;
+  padding: 0.2rem 0.8rem;
+  font-size: 0.75rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Gambar dalam Kartu Katalog */
+.card-img-container {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.card-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.card:hover .card-img-container img {
+  transform: scale(1.1);
+}
+
+.card h3 {
+  margin-bottom: 0.3rem;
+  color: #2d3748;
+  text-align: center;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #319795;
+  margin-bottom: 0.8rem;
+  text-align: center;
+}
+
+.price span {
+  font-size: 0.85rem;
+  color: #a0aec0;
+  font-weight: normal;
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+.card-features {
+  list-style: none;
+  margin-bottom: 1.2rem;
+  font-size: 0.85rem;
+  color: #4a5568;
+  border-top: 1px solid #edf2f7;
+  padding-top: 0.6rem;
+}
+
+.card-features li {
+  margin-bottom: 0.3rem;
+}
+
+.promo-info {
+  font-size: 0.8rem;
+  background-color: #edf2f7;
+  padding: 0.4rem;
+  border-radius: 6px;
+  color: #4a5568;
+  text-align: center;
+  display: block;
+}
+
+/* Calculator Section */
+#calc-section {
+  background-color: #edf2f7;
+  padding: 4rem 5%;
+  text-align: center;
+}
+
+#calc-section h2 {
+  margin-bottom: 2rem;
+  color: #2d3748;
+}
+
+.calc-box {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.form-group input:focus, .form-group select:focus {
+  outline: none;
+  border-color: #319795;
+}
+
+#btn-calculate {
+  width: 100%;
+  background-color: #319795;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#btn-calculate:hover {
+  background-color: #2c7a7b;
+}
+
+.result-box {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #e6fffa;
+  border: 1px solid #b2f5ea;
+  border-radius: 8px;
+}
+
+.result-box.hidden {
+  display: none;
+}
+
+.result-box h3 {
+  color: #234e52;
+  margin-bottom: 0.5rem;
+}
+
+.result-box p {
+  color: #2c7a7b;
+  margin-bottom: 0.3rem;
+}
+
+.result-box hr {
+  margin: 0.5rem 0;
+  border: none;
+  border-top: 1px solid #b2f5ea;
+}
+
+.result-box h4 {
+  color: #234e52;
+  font-size: 1.1rem;
+}
+
+/* Footer Section */
+#footer-section {
+  background-color: #1a202c;
+  color: #a0aec0;
+  text-align: center;
+  padding: 2rem 5%;
+  font-size: 0.9rem;
+}
+
+#footer-section p {
+  margin-bottom: 0.3rem;
+}
+
+/* Responsif Media Query untuk Ponsel */
+@media (max-width: 768px) {
+  #header-section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .benefit-item {
+    margin: 0 auto;
+  }
+
+  .hero-image-box {
+    margin-top: 1rem;
+  }
+
+  .catalog-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
